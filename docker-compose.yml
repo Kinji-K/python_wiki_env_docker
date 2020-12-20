@@ -1,0 +1,14 @@
+version: '3'
+services:
+   python3_wiki:
+     build:
+       context: .
+       args:
+         UID: $UID
+         GID: $GID
+     container_name: 'python3_wiki'
+     working_dir: '/opt/working'
+     tty: true
+     volumes:
+        - ./working:/opt/working
+        - ../web_container/html:/var/www/html

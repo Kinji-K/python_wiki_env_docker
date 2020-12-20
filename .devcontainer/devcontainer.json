@@ -1,0 +1,15 @@
+﻿{
+    "name": "Remote-python-wiki",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "python3_wiki",
+    "workspaceFolder": "/opt/working",
+    "remoteUser": "user",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python"
+    ] 
+}
