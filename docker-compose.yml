@@ -8,6 +8,7 @@ services:
          UID: $UID
          GID: $GID
      container_name: 'python3_wiki'
+     restart: always
      working_dir: '/opt/working'
      tty: true
      volumes:
